@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root {
+    --background: #f1f1f1;
+    --backgroundConteudo: #FFF;
+    --textColor: #000;
+    --borderColorButton: #f1f1f1;
+}
+
+body {
+    background: var(--background);
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--textColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0 0 5px 0;
+    color: #7294f5;
+}
+
+.dark-mode {
+    font-family: 'Roboto', sans-serif;
+    text-align: center !important;
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #CCC;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.capa {
+    height: 260px;
+    width: 100%;
+    background: #CCC;
+    position: relative;
+    background-image: url('https://cdn.leroymerlin.com.br/products/papel_de_parede_tecnologia_chip_hardware_sala_adesivo_403pcm_1567477922_160e_600x600.jpg');
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+}
+
+.img-profile {
+    position: absolute;
+    bottom: -75px;
+    left: 45px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+}
+
+.info {
+    background-color: var(--backgroundConteudo);
+    border-radius: 0 0 20px 20px;
+}
+
+.info-margin {
+    padding: 105px 50px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 0;
+}
+
+.redes-sociais {
+    float: left;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.btn {
+    width: 105px;
+    background: #7294f5;
+    border: 1px solid var(--borderColorButton);
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.divisor {
+    margin: 0 0 25px 0;
+    width: 100%;
+    border: 1px dotted #7294f5;
+    border-radius: 10px;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    right: 0px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #5e5c5c;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #5e5c5c;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.span2 {
+    text-align: center;
+}
+
+.divisor2 {
+    border-width: 0;
+    height: 1px;
+    border-color: #ccc;
+}
